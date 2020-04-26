@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="4in" height="4in"
+viewBox="0 0 400 400"
+preserveAspectRatio="xMidYMid">
+<!-- The scene description goes here! -->
+<defs>
+	<g  id = "bar">
+		<polygon points = "160,195 155,205 285,280 290,270 " stroke="red" fill="red" />
+	</g>
+	
+	<g  id = "stand">
+		<polygon points = "195,343 235,343 215,233 " />
+	</g>
+	
+	<g id = "polygon">
+		<path d = "
+			
+			
+			
+M 	 10,	-49
+L 	-10,	-49
+L 	-28,	-42
+L 	-42,	-28
+L 	-49,	-10
+L 	-49,	10
+L 	-42,	28
+L 	-28,	42
+L 	-10,	49
+L 	 10,	49
+L 	 28,	42
+L 	 42,	28
+L 	 49,	10
+L 	 49,	-10
+L 	 42,	-28
+L 	 28,	-42
+L 	 10,	-49
+
+
+
+L 	 10,	-49 	M 0,0
+L 	-10,	-49 	M 0,0
+L 	-28,	-42	M 0,0
+L 	-42,	-28	M 0,0
+L 	-49,	-10	M 0,0
+L 	-49,	10	M 0,0
+L 	-42,	28	M 0,0	
+L 	-28,	42	M 0,0
+L 	-10,	49	M 0,0
+L 	 10,	49	M 0,0
+L 	 28,	42	M 0,0
+L 	 42,	28	M 0,0
+L 	 49,	10	M 0,0	
+L 	 49,	-10	M 0,0
+L 	 42,	-28	M 0,0
+L 	 28,	-42	M 0,0
+L 	 10,	-49	M 0,0
+
+
+Z
+		"/>
+		<animateTransform attributeName="transform"
+                          attributeType="XML"
+                          type="rotate"
+                          from="0 0 0"
+                          to="360 0 0"
+                          dur="18.0s"
+                          repeatCount="indefinite"/>
+	</g>
+	
+</defs>
+
+<!--pierwszy -->
+<use xlink:href = "#bar" />
+<use xlink:href = "#stand" stroke="blue" fill="blue"/>
+<!--drugi -->
+<use xlink:href = "#bar" transform = " scale(0.5 0.5 ) translate(400 -100)"/>
+<use xlink:href = "#stand" stroke="green" fill="green" transform = " scale(0.5 0.5 ) translate(400 -100)"/>
+<!--trzeci -->
+<use xlink:href = "#bar" transform = " scale(0.75 0.75 ) translate(-80 -135)"/>
+<use xlink:href = "#stand" stroke="purple" fill="purple" transform = " scale(0.75 0.75 ) translate(-75 -135)"/>
+<!--kolka -->
+<use xlink:href = "#polygon" stroke="black" fill="none" stroke-width="1" transform = " scale(0.5 0.5 ) translate(122 102)"/>
+<use xlink:href = "#polygon" stroke="black" fill="none" stroke-width="1" transform = " scale(0.5 0.5 ) translate(305 207)"/>
+
+<use xlink:href = "#polygon" stroke="black" fill="none" stroke-width="1" transform = " scale(0.25 0.25 ) translate(1122 204)"/>
+<use xlink:href = "#polygon" stroke="black" fill="none" stroke-width="1" transform = " scale(0.25 0.25 ) translate(1365 343)"/>
+
+<use xlink:href = "#polygon" stroke="black" fill="none" stroke-width="1" transform = " scale(0.75 0.75 ) translate(213 270)"/>
+<use xlink:href = "#polygon" stroke="black" fill="none" stroke-width="1" transform = " scale(0.75 0.75 ) translate(377 365)"/>
+
+</svg>
